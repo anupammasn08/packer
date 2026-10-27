@@ -1,14 +1,10 @@
 packer {
   required_plugins {
     amazon = {
-      version = "~> 1"
-      source  = "github.com/hashicorp/ansible"
+      version = ">= 1.2.8"
+      source  = "github.com/hashicorp/amazon"
     }
   }
-}
-
-variable "build_number" {
-  type = string
 }
 
 variable "service_name" {
