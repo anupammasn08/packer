@@ -13,7 +13,6 @@ pipeline {
                 sh """
                     packer init packer/ami.pkr.hcl
                     packer validate -var "build_number=${BUILD_NUMBER}" packer/ami.pkr.hcl
-                    packer build \
                         packer build -var "build_number=${BUILD_NUMBER}" packer/ami.pkr.hcl
                 """
             }
