@@ -33,7 +33,7 @@ variable "service_version" {
 
 variable "source_ami" {
   type    = string
-  default = "ami-053b0d53c279acc90"
+  default = "ami-05eca858e2227a6ff"
 }
 
 variable "aws_region" {
