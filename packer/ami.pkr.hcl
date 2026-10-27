@@ -16,6 +16,11 @@ packer {
   }
 }
 
+variable "build_number" {
+  type    = number
+  default = 1
+}
+
 variable "service_name" {
   type    = string
   default = "ami"
